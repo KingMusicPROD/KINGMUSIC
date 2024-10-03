@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KING MUSIC - Productora Musical</title>
+    <link href="https://fonts.googleapis.com/css2?family=Freestyle+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #ff4500;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        header img {
+            max-width: 150px;
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-family: 'Freestyle Script', cursive;
+            font-size: 4rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sección principal */
+        .section {
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo del subtítulo */
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #ff4500;
+            text-transform: uppercase;
+            font-family: 'Freestyle Script', cursive; /* Cambié la fuente aquí */
+        }
+
+        /* Estilo de precios */
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .price-card {
+            background-color: #282828;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .price-card h3 {
+            font-size: 1.5rem; /* Tamaño del título de precios */
+        }
+
+        .price-card p {
+            font-size: 2rem; /* Tamaño del precio */
+            font-weight: bold; /* Negrita para precios */
+        }
+
+        .price-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilo del reproductor de audio */
+        .audio-sample {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Estilo de enlaces */
+        .btn {
+            display: inline-block;
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="tu_logo.png" alt="KING MUSIC Logo">
+        <h1>KING MUSIC</h1>
+        <p>Producción Musical desde 2019</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#muestras">Muestras</a> <!-- Nueva sección -->
+    </nav>
+
+    <!-- Sección de información -->
+    <section class="section" id="home">
+        <h2>Bienvenidos a KING MUSIC</h2>
+        <img src="tu_imagen.jpg" alt="Imagen de música" style="width: 100%; border-radius: 10px;">
+        <p>Ubicados en Temuco, Chile, ofrecemos servicios de producción musical de alta calidad.</p>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section class="section" id="servicios">
+        <h2>Servicios</h2>
+        <div class="pricing">
+            <div class="price-card">
+                <h3>Producción y Masterización</h3>
+                <p>20,000 CLP / 20 USD</p>
+            </div>
+            <div class="price-card">
+                <h3>Grabación en Estudio</h3>
+                <p>25,000 CLP por persona / 25 USD</p>
+                <p>(precio conversable para más de un artista)</p>
+            </div>
+            <div class="price-card">
+                <h3>Otros Servicios</h3>
+                <p>Hacemos letras para canciones y beats.</p>
+                <p>No hacemos videoclips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de muestras de audio -->
+    <section class="section" id="muestras">
+        <h2>Muestras de Audio</h2>
+        <div class="audio-sample">
+            <p>Escucha algunos de nuestros beats:</p>
+            <audio controls>
+                <source src="tu_beat1.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <br>
+            <audio controls>
+                <source src="tu_beat2.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, contáctanos:</p>
+        <p>Instagram: <strong><a href="https://www.instagram.com/kingmusic_0fficial" target="_blank">@kingmusic_0fficial</a></strong></p>
+        <p>Teléfono: <strong>+56937073978</strong></p>
+        <p>Canal de YouTube: <strong><a href="https://www.youtube.com/channel/UC0aKB7-Q4MUzPUQ-6DopvQg" target="_blank">KING MUSIC</a></strong></p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 KING MUSIC - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
